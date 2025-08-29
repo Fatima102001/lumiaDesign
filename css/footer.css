@@ -1,0 +1,154 @@
+.footer{
+    padding: 1rem 5rem;
+    background-color: rgba(113, 157, 204, 0.70);
+    margin-top:-6px;
+    height: 40vh;
+}
+.footer .footer-row {
+  display: flex;
+  height:100% ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.footer-col{
+    flex-grow: 1;
+    flex-basis: 15rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col img{
+    width: 70%;
+    height: 100%;
+}
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 70%;
+}
+.footer-col .links {
+  width: 70%;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.footer-col .links li a:hover {
+  color: white;
+}
+.footer-col p {
+  color: var(--main-color);
+  width: 70%;
+}
+.footer-col form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+.footer-col input {
+  height: 35px;
+  border-radius: 25px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--main-color) ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: white;
+}
+ .footer-col form button {
+  background: var(--main-color);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: white;
+  color: var(--main-color);
+}
+.footer-col .icons ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: var(--main-color);
+}
+.footer-col .icons i:hover  {
+  color: white;
+}
+
+
+
+
+.onde {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  z-index: -999;
+  min-height:100px;
+  max-height:150px;
+  margin-top: -5rem; 
+}
+
+
+/* Animation */
+
+.parallaxonde > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallaxonde > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallaxonde > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallaxonde > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallaxonde > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+
+
+
+
+
+
+
+
+

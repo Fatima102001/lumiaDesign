@@ -1,0 +1,147 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: max-content;
+    padding: 0  5rem 5rem;
+    background:  rgba(113, 157, 204, 0.07);
+}
+.contact .title{
+    min-height: 15vh;
+    max-height: max-content;
+    width: 100%;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .title h1{
+     color: var(--secondary-color);
+    opacity: 70%;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+.contact-container{
+    width: 90%;
+    min-height: 85vh;
+    max-height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.contact-content {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 95%;
+    max-height: max-content;
+    text-align: center;
+    flex-grow: 2;
+    flex-basis: 400px;
+    padding: 1%;
+}
+.contact h1 {
+    color: var(--main-color);
+    font-weight: 100;
+    font-size: 2em;
+    text-align:center;
+}
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:1% 2%;
+    gap: 10px;
+}
+.contact .inputs-name, .inputs-subject, .message{
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.contact .inputs-subject, .message{
+    flex-grow: 2;
+    flex-basis: 100%;   
+}
+.contact label {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    color: #203560;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    font-size: 16px;
+}
+.contact input::placeholder, textarea::placeholder {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+.contact input:focus, textarea:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+.contact .contact-btn {
+    width: 25%;
+    padding: 1% 1%;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    margin-left: 75%;
+}
+.contact .contact-btn a{
+    color: white; 
+}
+
+.contact .contact-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+.contact .content-text{
+    flex-grow: 1;
+    border-radius: 10px;
+    max-height: max-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 2em;
+    flex-basis: 15rem;
+    gap: 10px; 
+    display: flex;
+    flex-direction: column;  
+}
+.contact .content-text h3{
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    border-bottom: 1px solid var(--main-color);
+}
+.contact .content-text h5{
+    color: var(--main-color);
+    font-size: 1em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+.contact .content-text a{
+    color: var(--main-color);
+    font-size: 1em;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 3%;
+}
+.contact .content-text a i{
+    margin-right: 2%;
+}
+.contact .content-text a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;   
+}
+
+
+    
+
